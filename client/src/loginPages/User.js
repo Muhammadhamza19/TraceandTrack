@@ -41,7 +41,7 @@ export default function SignIn() {
     // eslint-disable-next-line no-console
     console.log({
       username: data.get("User_name"),
-      aadhar: data.get("Aadhar_id"),
+      // aadhar: data.get("Aadhar_id"),
       email: data.get("email"),
       region: data.get("Region_Name"),
       password: data.get("Password_Id")
@@ -54,7 +54,7 @@ export default function SignIn() {
 			},
 			body: JSON.stringify({
         username: data.get("User_name"),
-        aadhar: data.get("Aadhar_id"),
+        // aadhar: data.get("Aadhar_id"),
         email: data.get("email"),
         region: data.get("Region_Name"),
         password: data.get("Password_Id"),
@@ -103,16 +103,16 @@ export default function SignIn() {
               //autoComplete="company"
               autoFocus
             />
-            <TextField
+            {/* <TextField
               margin="normal"
               required
               fullWidth
-              name="Aadhar_id"
-              label="Aadhar Number"
-              id="Aadhar_id"
+              name="Cnic_id"
+              label="CNIC Number"
+              id="CNIC_id"
               // onChange={(e)=>(e.target.value)}
               //autoComplete="current-password"
-            />
+            /> */}
             <TextField
               margin="normal"
               required

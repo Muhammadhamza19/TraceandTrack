@@ -218,7 +218,7 @@ export default function SignIn() {
         </Box>
         {/* <Copyright sx={{ mt: 8, mb: 4 }} /> */}
       </Container>
-      <Button onClick={seeDetails}>Click</Button>
+      {/* <Button onClick={seeDetails}>Click</Button> */}
 
     </ThemeProvider>
   );

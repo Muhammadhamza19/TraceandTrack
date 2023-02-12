@@ -59,6 +59,8 @@ export default function DashboardApp() {
   const [quantity,setQuantity]=useState('0');
   const [trackContract, settrackContract]=useState(null);
   const [disContract, setdisContract]=useState(null);
+  const [autocheck, setAutocheck]=useState(false);
+
 
   const loadContract= async()=>{
     const web3 = await getWeb3();
@@ -117,7 +119,7 @@ export default function DashboardApp() {
     .send({ from: account }).then((r)=>{}).catch(err=>console.log(err))
 
     await trackContract.methods.settColor().send({ from: account }).then((r)=>{}).catch(err=>console.log(err))
-
+    setAutocheck("tc")
     // const c = await trackContract.methods.gettColor().call();
     // console.log(tc)
   }
@@ -152,7 +154,7 @@ export default function DashboardApp() {
           </Grid> */}
 
           <Grid item xs={12} md={6} lg={4}>
-            <AppOrderTimeline />
+            <AppOrderTimeline  autocheck={autocheck}/>
           </Grid>
 
           {/* <Grid item xs={12} md={6} lg={8}>

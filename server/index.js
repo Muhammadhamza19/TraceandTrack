@@ -21,7 +21,7 @@ app.post('/api/register', async (req, res) => {
 		console.log("Here")
 		const user = await User.create({
 			username: req.body.username,
-			aadhar: req.body.aadhar,
+			// aadhar: req.body.aadhar,
 			email: req.body.email,
 			region: req.body.region,
 			password: req.body.password,
@@ -82,7 +82,7 @@ app.post('/api/login', async (req, res) => {
 				'secret123'
 			)
 			console.log(token);
-			return res.json({ status: 'ok', user: token })
+			return res.json({ status: 'ok', user: token,id:user._id })
 		}
 	
 })
@@ -161,12 +161,13 @@ app.post('/api/requestregion', async (req, res) => {
 		const decoded = jwt.verify(token, 'secret123')
 		const email = decoded.email
 		const user = await User.findOne({ email: email })
-		console.log(user.region)
+		console.log(email,user.region)
 		// const r = Region.findOne({region: user.region})
 		// console.log(r)
 		await Region.updateOne(
 			{ region: user.region },
-			{ $inc: { 'count': 1 } }
+			{ $inc: { 'count': 1 } },
+			{upsert:true}
 		)
 
 		return res.json({ status: 'ok' })
@@ -212,6 +213,26 @@ app.get('/api/sum', async (req, res) => {
 	}
 })
 
+app.put('/api/delete', async (req, res) => {
+	
+	try {
+	console.log(req.body._id)
+		const fordelete = await Region.updateOne({
+		_id : mongoose.Types.ObjectId(req.body._id)
+		}, {
+		$set:{
+			count : 0
+		}
+})
+		console.log(fordelete);
+		res.send(fordelete)
+
+		//res.json({ status: 'ok' })
+	} catch (err) {
+		console.log(err);
+		
+	}
+})
 
 
 app.listen(1337, () => {

@@ -6,25 +6,49 @@ import jwt from 'jsonwebtoken'
 import { Box, Grid, Container, Typography } from '@mui/material';
 import AppWeeklySales from '../dashcomponents/AppWeeklySales';
 import AppOrderTimeline from '../dashcomponents/AppOrderTimeline';
+import getWeb3 from "../getWeb3";
+import tracking from "../contracts/tracking.json";
+import document from "../contracts/Transporter.json";
 
 
 function UserDash(){
     const [RequestAid, setrequestAid] = useState('Not requested')
+    const [reset, setReset] = useState(false)
     const navigate = useNavigate();
+    const [account,setAccount]=useState('');
+  const [contract,setContract]=useState(null);
+  const [quantity,setQuantity]=useState('0');
+  const [trackContract, settrackContract]=useState(null);
+  const loadContract= async()=>{
+    const web3 = await getWeb3();
+    const accounts = await web3.eth.getAccounts()
+    console.log(accounts)
+    setAccount(accounts[0])
+
+    const networkId = await web3.eth.net.getId()
+    const networkData = document.networks[networkId]
+      if(networkData){            
+          const abi = document.abi
+          const address = networkData.address
+          const c = new web3.eth.Contract(abi, address)
+          setContract(c)
+      }else{
+          window.alert('Smart Contract not deployed to detected network')
+      }
+
+      const tracknetworkData = tracking.networks[networkId]
+      if(tracknetworkData){            
+          const abi = tracking.abi
+          const address = tracknetworkData.address
+          const contract = new web3.eth.Contract(abi, address)
+          await settrackContract(contract)
+      }else{
+          window.alert('Smart Contract not deployed to detected network')
+      }
+  } 
     useEffect(() => {
         console.log(localStorage.getItem("token"))
-        // setrequestAid("Not Requested")
-		// const token = localStorage.getItem('token')
-		// if (token) {
-		// 	const user = jwt.decode(token)
-		// 	if (!user) {
-        //         console.log("issue in login")
-		// 		localStorage.removeItem('token')
-		// 		navigate('/login')
-		// 	} else {
-		// 		setrequestAid("Not requested")
-		// 	}
-		// }
+        loadContract();
 
 	}, [])
 
@@ -50,12 +74,26 @@ function UserDash(){
             alert(data.error)
         }
     }
-    
+
+    const recevied =async ()=>{
+            await trackContract.methods.reset().send({ from: account }).then((r)=>{}).catch(err=>console.log(err))
+              setReset(true);
+              const req = await fetch('http://localhost:1337/api/delete', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-access-token': localStorage.getItem('id'),
+                },
+                body: JSON.stringify({
+                    _id: localStorage.getItem('id'),
+                }),
+            })
+    }
 
 
     return <div>
         <Button onClick={requestAid}>Request Aid</Button>
-
+   
         <h1>Hello user</h1>
         <h1>Your request: {RequestAid}</h1>
         <Page title="Dashboard | Minimal-UI">
@@ -68,9 +106,10 @@ function UserDash(){
                             <AppWeeklySales />
                         </Grid>
                         <Grid item xs={12} md={6} lg={4}>
-                            <AppOrderTimeline />
+                            <AppOrderTimeline  reset={reset}/>
                         </Grid>
                     </Grid>
+                    <Button onClick={recevied}>Received</Button>
             </Container>
         </Page>
     </div>

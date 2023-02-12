@@ -95,6 +95,7 @@ export default function DashboardApp() {
     const q = await contract.methods.getQuantity().call()
     setQuantity(q)
     await trackContract.methods.setrColor().send({ from: account }).then((r)=>{}).catch(err=>console.log(err))
+    
   }
 
   return (

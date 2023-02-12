@@ -2,6 +2,126 @@
   "contractName": "tracking",
   "abi": [
     {
+      "constant": true,
+      "inputs": [],
+      "name": "dtime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "mtime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "rtime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ttime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getmTime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "gettTime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getdTime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getrTime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
       "constant": false,
       "inputs": [],
       "name": "setmColor",
@@ -107,21 +227,21 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getdColor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"exists\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getmColor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"exists\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getrColor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"exists\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"gettColor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"exists\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"reset\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"setdColor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"setmColor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"setrColor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"settColor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/tracking.sol\":\"tracking\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/tracking.sol\":{\"keccak256\":\"0x935e6304c2e8a88ff24a4d30c079bcf4a414c43b75512b685105279851f0008d\",\"urls\":[\"bzz-raw://7a690bce73c2bd5ec629153586532a6e5dc667e9ca0e1358918617e9b736833e\",\"dweb:/ipfs/QmQ26cRsBPjuK6C5J3i2HDaM7P4htQ1oCy2ZzVH67zVUrG\"]}},\"version\":1}",
-  "bytecode": "0x608060405260008060006101000a81548160ff02191690831515021790555060008060016101000a81548160ff02191690831515021790555060008060026101000a81548160ff02191690831515021790555060008060036101000a81548160ff02191690831515021790555034801561007857600080fd5b506102f0806100886000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c806359be66441161006657806359be6644146100fc578063a439ac951461011a578063d26e508d14610124578063d826f88f1461012e578063ec6c18be1461013857610093565b80630c3631bb146100985780631b17ca8b146100b657806325ea60e3146100c05780634b59d412146100de575b600080fd5b6100a0610142565b6040516100ad9190610286565b60405180910390f35b6100be610158565b005b6100c8610174565b6040516100d59190610286565b60405180910390f35b6100e661018a565b6040516100f39190610286565b60405180910390f35b6101046101a0565b6040516101119190610286565b60405180910390f35b6101226101b6565b005b61012c6101d3565b005b6101366101f0565b005b61014061025a565b005b60008060039054906101000a900460ff16905090565b60016000806101000a81548160ff021916908315150217905550565b60008060019054906101000a900460ff16905090565b60008060009054906101000a900460ff16905090565b60008060029054906101000a900460ff16905090565b6001600060036101000a81548160ff021916908315150217905550565b6001600060026101000a81548160ff021916908315150217905550565b60008060006101000a81548160ff02191690831515021790555060008060016101000a81548160ff02191690831515021790555060008060026101000a81548160ff02191690831515021790555060008060036101000a81548160ff021916908315150217905550565b6001600060016101000a81548160ff021916908315150217905550565b610280816102a1565b82525050565b600060208201905061029b6000830184610277565b92915050565b6000811515905091905056fea365627a7a723158207fb993cc9174b44f24524c302bbdf9884698726b960d1c81fa025379eb1b084b6c6578706572696d656e74616cf564736f6c63430005100040",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100935760003560e01c806359be66441161006657806359be6644146100fc578063a439ac951461011a578063d26e508d14610124578063d826f88f1461012e578063ec6c18be1461013857610093565b80630c3631bb146100985780631b17ca8b146100b657806325ea60e3146100c05780634b59d412146100de575b600080fd5b6100a0610142565b6040516100ad9190610286565b60405180910390f35b6100be610158565b005b6100c8610174565b6040516100d59190610286565b60405180910390f35b6100e661018a565b6040516100f39190610286565b60405180910390f35b6101046101a0565b6040516101119190610286565b60405180910390f35b6101226101b6565b005b61012c6101d3565b005b6101366101f0565b005b61014061025a565b005b60008060039054906101000a900460ff16905090565b60016000806101000a81548160ff021916908315150217905550565b60008060019054906101000a900460ff16905090565b60008060009054906101000a900460ff16905090565b60008060029054906101000a900460ff16905090565b6001600060036101000a81548160ff021916908315150217905550565b6001600060026101000a81548160ff021916908315150217905550565b60008060006101000a81548160ff02191690831515021790555060008060016101000a81548160ff02191690831515021790555060008060026101000a81548160ff02191690831515021790555060008060036101000a81548160ff021916908315150217905550565b6001600060016101000a81548160ff021916908315150217905550565b610280816102a1565b82525050565b600060208201905061029b6000830184610277565b92915050565b6000811515905091905056fea365627a7a723158207fb993cc9174b44f24524c302bbdf9884698726b960d1c81fa025379eb1b084b6c6578706572696d656e74616cf564736f6c63430005100040",
-  "sourceMap": "98:832:6:-;;;133:5;121:17;;;;;;;;;;;;;;;;;;;;156:5;144:17;;;;;;;;;;;;;;;;;;;;179:5;167:17;;;;;;;;;;;;;;;;;;;;202:5;190:17;;;;;;;;;;;;;;;;;;;;98:832;8:9:-1;5:2;;;30:1;27;20:12;5:2;98:832:6;;;;;;;",
-  "deployedSourceMap": "98:832:6:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;98:832:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;844:84;;;:::i;:::-;;;;;;;;;;;;;;;;214:55;;;:::i;:::-;;666:84;;;:::i;:::-;;;;;;;;;;;;;;;;577;;;:::i;:::-;;;;;;;;;;;;;;;;755;;;:::i;:::-;;;;;;;;;;;;;;;;394:55;;;:::i;:::-;;334;;;:::i;:::-;;454:118;;;:::i;:::-;;274:55;;;:::i;:::-;;844:84;886:11;915:6;;;;;;;;;;;908:13;;844:84;:::o;214:55::-;258:4;251:6;;:11;;;;;;;;;;;;;;;;;;214:55::o;666:84::-;708:11;737:6;;;;;;;;;;;730:13;;666:84;:::o;577:::-;619:11;648:6;;;;;;;;;;;641:13;;577:84;:::o;755:::-;797:11;826:6;;;;;;;;;;;819:13;;755:84;:::o;394:55::-;438:4;431:6;;:11;;;;;;;;;;;;;;;;;;394:55::o;334:::-;378:4;371:6;;:11;;;;;;;;;;;;;;;;;;334:55::o;454:118::-;494:5;487:6;;:12;;;;;;;;;;;;;;;;;;516:5;509:6;;:12;;;;;;;;;;;;;;;;;;538:5;531:6;;:12;;;;;;;;;;;;;;;;;;560:5;553:6;;:12;;;;;;;;;;;;;;;;;;454:118::o;274:55::-;318:4;311:6;;:11;;;;;;;;;;;;;;;;;;274:55::o;5:104:-1:-;82:21;97:5;82:21;;;77:3;70:34;64:45;;;116:201;;228:2;217:9;213:18;205:26;;242:65;304:1;293:9;289:17;280:6;242:65;;;199:118;;;;;324:85;;397:5;390:13;383:21;372:32;;366:43;;;",
-  "source": "//SPDX-License-Identifier: MIT\npragma solidity >=0.4.21 <=0.8;\npragma experimental ABIEncoderV2;\n\ncontract tracking{\n    bool mColor=false;\n    bool tColor=false;\n    bool dColor=false;\n    bool rColor=false;\n\n    function setmColor() public{\n        mColor=true;\n    }\n    function settColor() public{\n        tColor=true;\n    }\n    function setdColor() public{\n        dColor=true;\n    }\n    function setrColor() public{\n        rColor=true;\n    }\n    function reset() public{\n        mColor=false;\n        tColor=false;\n        dColor=false;\n        rColor=false;\n    }\n    function getmColor() public view returns (bool exists){\n        return mColor;\n    }\n    function gettColor() public view returns (bool exists){\n        return tColor;\n    }\n    function getdColor() public view returns (bool exists){\n        return dColor;\n    }\n    function getrColor() public view returns (bool exists){\n        return rColor;\n    }\n}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"dtime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getdColor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"exists\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getdTime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getmColor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"exists\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getmTime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getrColor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"exists\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getrTime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"gettColor\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"exists\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"gettTime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"mtime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"reset\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"rtime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"setdColor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"setmColor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"setrColor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"settColor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"ttime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/tracking.sol\":\"tracking\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/tracking.sol\":{\"keccak256\":\"0x672b9e46d7c0cde7e2492d80ee544f96c25dc8f017be4e6d0cafe33c8f721e34\",\"urls\":[\"bzz-raw://5de25ad92c05648afb1d727653cc76b39286ea0deaea610d94c68aeca58f30f7\",\"dweb:/ipfs/QmSywxNk8yC3Q7R16Ep9ZSaa4CyX4o8DRrNyCnYyEguV1e\"]}},\"version\":1}",
+  "bytecode": "0x608060405260008060006101000a81548160ff02191690831515021790555060008060016101000a81548160ff02191690831515021790555060008060026101000a81548160ff02191690831515021790555060008060036101000a81548160ff02191690831515021790555034801561007857600080fd5b50610508806100886000396000f3fe608060405234801561001057600080fd5b506004361061010b5760003560e01c80634b59d412116100a2578063a439ac9511610071578063a439ac9514610264578063d26e508d1461026e578063d826f88f14610278578063ec6c18be14610282578063ef158ae91461028c5761010b565b80634b59d412146101ec5780634ca77e281461020a57806359be6644146102285780639d5501a9146102465761010b565b80631b17ca8b116100de5780631b17ca8b146101885780631b4561611461019257806325ea60e3146101b0578063476d4346146101ce5761010b565b80630c3631bb14610110578063118cbd021461012e57806312549dc01461014c57806316a9769f1461016a575b600080fd5b6101186102aa565b6040516101259190610479565b60405180910390f35b6101366102c0565b6040516101439190610494565b60405180910390f35b6101546102c6565b6040516101619190610494565b60405180910390f35b6101726102cc565b60405161017f9190610494565b60405180910390f35b6101906102d2565b005b61019a6102f5565b6040516101a79190610494565b60405180910390f35b6101b86102ff565b6040516101c59190610479565b60405180910390f35b6101d6610315565b6040516101e39190610494565b60405180910390f35b6101f461031f565b6040516102019190610479565b60405180910390f35b610212610335565b60405161021f9190610494565b60405180910390f35b61023061033b565b60405161023d9190610479565b60405180910390f35b61024e610351565b60405161025b9190610494565b60405180910390f35b61026c61035b565b005b61027661037f565b005b6102806103a3565b005b61028a61042d565b005b610294610451565b6040516102a19190610494565b60405180910390f35b60008060039054906101000a900460ff16905090565b60045481565b60025481565b60035481565b60016000806101000a81548160ff02191690831515021790555042600181905550565b6000600254905090565b60008060019054906101000a900460ff16905090565b6000600154905090565b60008060009054906101000a900460ff16905090565b60015481565b60008060029054906101000a900460ff16905090565b6000600354905090565b6001600060036101000a81548160ff02191690831515021790555042600481905550565b6001600060026101000a81548160ff02191690831515021790555042600281905550565b60008060006101000a81548160ff02191690831515021790555060008060016101000a81548160ff02191690831515021790555060008060026101000a81548160ff02191690831515021790555060008060036101000a81548160ff0219169083151502179055506000600181905550600060028190555060006003819055506000600481905550565b6001600060016101000a81548160ff02191690831515021790555042600381905550565b6000600454905090565b610464816104af565b82525050565b610473816104bb565b82525050565b600060208201905061048e600083018461045b565b92915050565b60006020820190506104a9600083018461046a565b92915050565b60008115159050919050565b600081905091905056fea365627a7a723158202b9456fcc9ece866b0fac1135ae1c47576df684b8075d12b158625f8ebaf76dc6c6578706572696d656e74616cf564736f6c63430005100040",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061010b5760003560e01c80634b59d412116100a2578063a439ac9511610071578063a439ac9514610264578063d26e508d1461026e578063d826f88f14610278578063ec6c18be14610282578063ef158ae91461028c5761010b565b80634b59d412146101ec5780634ca77e281461020a57806359be6644146102285780639d5501a9146102465761010b565b80631b17ca8b116100de5780631b17ca8b146101885780631b4561611461019257806325ea60e3146101b0578063476d4346146101ce5761010b565b80630c3631bb14610110578063118cbd021461012e57806312549dc01461014c57806316a9769f1461016a575b600080fd5b6101186102aa565b6040516101259190610479565b60405180910390f35b6101366102c0565b6040516101439190610494565b60405180910390f35b6101546102c6565b6040516101619190610494565b60405180910390f35b6101726102cc565b60405161017f9190610494565b60405180910390f35b6101906102d2565b005b61019a6102f5565b6040516101a79190610494565b60405180910390f35b6101b86102ff565b6040516101c59190610479565b60405180910390f35b6101d6610315565b6040516101e39190610494565b60405180910390f35b6101f461031f565b6040516102019190610479565b60405180910390f35b610212610335565b60405161021f9190610494565b60405180910390f35b61023061033b565b60405161023d9190610479565b60405180910390f35b61024e610351565b60405161025b9190610494565b60405180910390f35b61026c61035b565b005b61027661037f565b005b6102806103a3565b005b61028a61042d565b005b610294610451565b6040516102a19190610494565b60405180910390f35b60008060039054906101000a900460ff16905090565b60045481565b60025481565b60035481565b60016000806101000a81548160ff02191690831515021790555042600181905550565b6000600254905090565b60008060019054906101000a900460ff16905090565b6000600154905090565b60008060009054906101000a900460ff16905090565b60015481565b60008060029054906101000a900460ff16905090565b6000600354905090565b6001600060036101000a81548160ff02191690831515021790555042600481905550565b6001600060026101000a81548160ff02191690831515021790555042600281905550565b60008060006101000a81548160ff02191690831515021790555060008060016101000a81548160ff02191690831515021790555060008060026101000a81548160ff02191690831515021790555060008060036101000a81548160ff0219169083151502179055506000600181905550600060028190555060006003819055506000600481905550565b6001600060016101000a81548160ff02191690831515021790555042600381905550565b6000600454905090565b610464816104af565b82525050565b610473816104bb565b82525050565b600060208201905061048e600083018461045b565b92915050565b60006020820190506104a9600083018461046a565b92915050565b60008115159050919050565b600081905091905056fea365627a7a723158202b9456fcc9ece866b0fac1135ae1c47576df684b8075d12b158625f8ebaf76dc6c6578706572696d656e74616cf564736f6c63430005100040",
+  "sourceMap": "98:1432:6:-;;;133:5;121:17;;;;;;;;;;;;;;;;;;;;156:5;144:17;;;;;;;;;;;;;;;;;;;;179:5;167:17;;;;;;;;;;;;;;;;;;;;202:5;190:17;;;;;;;;;;;;;;;;;;;;98:1432;8:9:-1;5:2;;;30:1;27;20:12;5:2;98:1432:6;;;;;;;",
+  "deployedSourceMap": "98:1432:6:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;98:1432:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1444:84;;;:::i;:::-;;;;;;;;;;;;;;;;282:17;;;:::i;:::-;;;;;;;;;;;;;;;;236;;;:::i;:::-;;;;;;;;;;;;;;;;259;;;:::i;:::-;;;;;;;;;;;;;;;;611:88;;;:::i;:::-;;461:68;;;:::i;:::-;;;;;;;;;;;;;;;;1266:84;;;:::i;:::-;;;;;;;;;;;;;;;;306:68;;;:::i;:::-;;;;;;;;;;;;;;;;1177:84;;;:::i;:::-;;;;;;;;;;;;;;;;213:17;;;:::i;:::-;;;;;;;;;;;;;;;;1355:84;;;:::i;:::-;;;;;;;;;;;;;;;;387:68;;;:::i;:::-;;;;;;;;;;;;;;;;892:89;;;:::i;:::-;;798;;;:::i;:::-;;986:186;;;:::i;:::-;;704:89;;;:::i;:::-;;535:68;;;:::i;:::-;;;;;;;;;;;;;;;;1444:84;1486:11;1515:6;;;;;;;;;;;1508:13;;1444:84;:::o;282:17::-;;;;:::o;236:::-;;;;:::o;259:::-;;;;:::o;611:88::-;655:4;648:6;;:11;;;;;;;;;;;;;;;;;;677:15;669:5;:23;;;;611:88::o;461:68::-;501:4;519:5;;512:12;;461:68;:::o;1266:84::-;1308:11;1337:6;;;;;;;;;;;1330:13;;1266:84;:::o;306:68::-;346:4;364:5;;357:12;;306:68;:::o;1177:84::-;1219:11;1248:6;;;;;;;;;;;1241:13;;1177:84;:::o;213:17::-;;;;:::o;1355:84::-;1397:11;1426:6;;;;;;;;;;;1419:13;;1355:84;:::o;387:68::-;427:4;445:5;;438:12;;387:68;:::o;892:89::-;936:4;929:6;;:11;;;;;;;;;;;;;;;;;;958:15;950:5;:23;;;;892:89::o;798:::-;842:4;835:6;;:11;;;;;;;;;;;;;;;;;;864:15;856:5;:23;;;;798:89::o;986:186::-;1026:5;1019:6;;:12;;;;;;;;;;;;;;;;;;1048:5;1041:6;;:12;;;;;;;;;;;;;;;;;;1070:5;1063:6;;:12;;;;;;;;;;;;;;;;;;1092:5;1085:6;;:12;;;;;;;;;;;;;;;;;;1113:1;1107:5;:7;;;;1130:1;1124:5;:7;;;;1147:1;1141:5;:7;;;;1164:1;1158:5;:7;;;;986:186::o;704:89::-;748:4;741:6;;:11;;;;;;;;;;;;;;;;;;770:15;762:5;:23;;;;704:89::o;535:68::-;575:4;593:5;;586:12;;535:68;:::o;5:104:-1:-;82:21;97:5;82:21;;;77:3;70:34;64:45;;;116:113;199:24;217:5;199:24;;;194:3;187:37;181:48;;;236:201;;348:2;337:9;333:18;325:26;;362:65;424:1;413:9;409:17;400:6;362:65;;;319:118;;;;;444:213;;562:2;551:9;547:18;539:26;;576:71;644:1;633:9;629:17;620:6;576:71;;;533:124;;;;;664:85;;737:5;730:13;723:21;712:32;;706:43;;;;756:72;;818:5;807:16;;801:27;;;",
+  "source": "//SPDX-License-Identifier: MIT\npragma solidity >=0.4.21 <=0.8;\npragma experimental ABIEncoderV2;\n\ncontract tracking{\n    bool mColor=false;\n    bool tColor=false;\n    bool dColor=false;\n    bool rColor=false;\n    uint public mtime;\n    uint public dtime;\n    uint public ttime;\n    uint public rtime;\n  \n  function getmTime() public view returns(uint){\n    return mtime;\n  }        \n    function gettTime() public view returns(uint){\n    return ttime;\n  } \n    function getdTime() public view returns(uint){\n    return dtime;\n  } \n    function getrTime() public view returns(uint){\n    return rtime;\n  }  \n\n    function setmColor() public{\n        mColor=true;\n        mtime = block.timestamp;\n    }\n    function settColor() public{\n        tColor=true;\n        ttime = block.timestamp;\n\n    }\n    function setdColor() public{\n        dColor=true;\n        dtime = block.timestamp;\n\n    }\n    function setrColor() public{\n        rColor=true;\n        rtime = block.timestamp;\n\n    }\n    function reset() public{\n        mColor=false;\n        tColor=false;\n        dColor=false;\n        rColor=false;\n        mtime=0;\n        dtime=0;\n        ttime=0;\n        rtime=0;\n    }\n    function getmColor() public view returns (bool exists){\n        return mColor;\n    }\n    function gettColor() public view returns (bool exists){\n        return tColor;\n    }\n    function getdColor() public view returns (bool exists){\n        return dColor;\n    }\n    function getrColor() public view returns (bool exists){\n        return rColor;\n    }\n}",
   "sourcePath": "D:\\Hamza\\Document\\final year\\Final year project\\contracts\\tracking.sol",
   "ast": {
     "absolutePath": "project:/contracts/tracking.sol",
     "exportedSymbols": {
       "tracking": [
-        539
+        615
       ]
     },
-    "id": 540,
+    "id": 616,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -152,9 +272,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 539,
+        "id": 615,
         "linearizedBaseContracts": [
-          539
+          615
         ],
         "name": "tracking",
         "nodeType": "ContractDefinition",
@@ -164,7 +284,7 @@
             "id": 445,
             "name": "mColor",
             "nodeType": "VariableDeclaration",
-            "scope": 539,
+            "scope": 615,
             "src": "121:17:6",
             "stateVariable": true,
             "storageLocation": "default",
@@ -207,7 +327,7 @@
             "id": 448,
             "name": "tColor",
             "nodeType": "VariableDeclaration",
-            "scope": 539,
+            "scope": 615,
             "src": "144:17:6",
             "stateVariable": true,
             "storageLocation": "default",
@@ -250,7 +370,7 @@
             "id": 451,
             "name": "dColor",
             "nodeType": "VariableDeclaration",
-            "scope": 539,
+            "scope": 615,
             "src": "167:17:6",
             "stateVariable": true,
             "storageLocation": "default",
@@ -293,7 +413,7 @@
             "id": 454,
             "name": "rColor",
             "nodeType": "VariableDeclaration",
-            "scope": 539,
+            "scope": 615,
             "src": "190:17:6",
             "stateVariable": true,
             "storageLocation": "default",
@@ -332,145 +452,133 @@
             "visibility": "internal"
           },
           {
-            "body": {
-              "id": 461,
-              "nodeType": "Block",
-              "src": "241:28:6",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 459,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 457,
-                      "name": "mColor",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 445,
-                      "src": "251:6:6",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "hexValue": "74727565",
-                      "id": 458,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "bool",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "258:4:6",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      },
-                      "value": "true"
-                    },
-                    "src": "251:11:6",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "id": 460,
-                  "nodeType": "ExpressionStatement",
-                  "src": "251:11:6"
-                }
-              ]
+            "constant": false,
+            "id": 456,
+            "name": "mtime",
+            "nodeType": "VariableDeclaration",
+            "scope": 615,
+            "src": "213:17:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
             },
-            "documentation": null,
-            "id": 462,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "setmColor",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
+            "typeName": {
               "id": 455,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "232:2:6"
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "213:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
             },
-            "returnParameters": {
-              "id": 456,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "241:0:6"
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 458,
+            "name": "dtime",
+            "nodeType": "VariableDeclaration",
+            "scope": 615,
+            "src": "236:17:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
             },
-            "scope": 539,
-            "src": "214:55:6",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
+            "typeName": {
+              "id": 457,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "236:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 460,
+            "name": "ttime",
+            "nodeType": "VariableDeclaration",
+            "scope": 615,
+            "src": "259:17:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 459,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "259:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 462,
+            "name": "rtime",
+            "nodeType": "VariableDeclaration",
+            "scope": 615,
+            "src": "282:17:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 461,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "282:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
             "visibility": "public"
           },
           {
             "body": {
               "id": 469,
               "nodeType": "Block",
-              "src": "301:28:6",
+              "src": "351:23:6",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "id": 467,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 465,
-                      "name": "tColor",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 448,
-                      "src": "311:6:6",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "hexValue": "74727565",
-                      "id": 466,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "bool",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "318:4:6",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      },
-                      "value": "true"
-                    },
-                    "src": "311:11:6",
+                    "name": "mtime",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 456,
+                    "src": "364:5:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
                     }
                   },
+                  "functionReturnParameters": 466,
                   "id": 468,
-                  "nodeType": "ExpressionStatement",
-                  "src": "311:11:6"
+                  "nodeType": "Return",
+                  "src": "357:12:6"
                 }
               ]
             },
@@ -479,23 +587,50 @@
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "settColor",
+            "name": "getmTime",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 463,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "292:2:6"
+              "src": "323:2:6"
             },
             "returnParameters": {
-              "id": 464,
+              "id": 466,
               "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "301:0:6"
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 465,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 470,
+                  "src": "346:4:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 464,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "346:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "345:6:6"
             },
-            "scope": 539,
-            "src": "274:55:6",
-            "stateMutability": "nonpayable",
+            "scope": 615,
+            "src": "306:68:6",
+            "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
@@ -503,58 +638,26 @@
             "body": {
               "id": 477,
               "nodeType": "Block",
-              "src": "361:28:6",
+              "src": "432:23:6",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "id": 475,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 473,
-                      "name": "dColor",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 451,
-                      "src": "371:6:6",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "hexValue": "74727565",
-                      "id": 474,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "bool",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "378:4:6",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      },
-                      "value": "true"
-                    },
-                    "src": "371:11:6",
+                    "name": "ttime",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 460,
+                    "src": "445:5:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
                     }
                   },
+                  "functionReturnParameters": 474,
                   "id": 476,
-                  "nodeType": "ExpressionStatement",
-                  "src": "371:11:6"
+                  "nodeType": "Return",
+                  "src": "438:12:6"
                 }
               ]
             },
@@ -563,23 +666,50 @@
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "setdColor",
+            "name": "gettTime",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 471,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "352:2:6"
+              "src": "404:2:6"
             },
             "returnParameters": {
-              "id": 472,
+              "id": 474,
               "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "361:0:6"
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 473,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 478,
+                  "src": "427:4:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 472,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "427:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "426:6:6"
             },
-            "scope": 539,
-            "src": "334:55:6",
-            "stateMutability": "nonpayable",
+            "scope": 615,
+            "src": "387:68:6",
+            "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
@@ -587,58 +717,26 @@
             "body": {
               "id": 485,
               "nodeType": "Block",
-              "src": "421:28:6",
+              "src": "506:23:6",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "id": 483,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 481,
-                      "name": "rColor",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 454,
-                      "src": "431:6:6",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "hexValue": "74727565",
-                      "id": 482,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "bool",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "438:4:6",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      },
-                      "value": "true"
-                    },
-                    "src": "431:11:6",
+                    "name": "dtime",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 458,
+                    "src": "519:5:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
                     }
                   },
+                  "functionReturnParameters": 482,
                   "id": 484,
-                  "nodeType": "ExpressionStatement",
-                  "src": "431:11:6"
+                  "nodeType": "Return",
+                  "src": "512:12:6"
                 }
               ]
             },
@@ -647,134 +745,138 @@
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "setrColor",
+            "name": "getdTime",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 479,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "412:2:6"
+              "src": "478:2:6"
             },
             "returnParameters": {
-              "id": 480,
+              "id": 482,
               "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "421:0:6"
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 481,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 486,
+                  "src": "501:4:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 480,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "501:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "500:6:6"
             },
-            "scope": 539,
-            "src": "394:55:6",
-            "stateMutability": "nonpayable",
+            "scope": 615,
+            "src": "461:68:6",
+            "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 505,
+              "id": 493,
               "nodeType": "Block",
-              "src": "477:95:6",
+              "src": "580:23:6",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "id": 491,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 489,
-                      "name": "mColor",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 445,
-                      "src": "487:6:6",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "hexValue": "66616c7365",
-                      "id": 490,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "bool",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "494:5:6",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      },
-                      "value": "false"
-                    },
-                    "src": "487:12:6",
+                    "name": "rtime",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 462,
+                    "src": "593:5:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
                     }
                   },
+                  "functionReturnParameters": 490,
                   "id": 492,
-                  "nodeType": "ExpressionStatement",
-                  "src": "487:12:6"
-                },
+                  "nodeType": "Return",
+                  "src": "586:12:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 494,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getrTime",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 487,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "552:2:6"
+            },
+            "returnParameters": {
+              "id": 490,
+              "nodeType": "ParameterList",
+              "parameters": [
                 {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 495,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 493,
-                      "name": "tColor",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 448,
-                      "src": "509:6:6",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "hexValue": "66616c7365",
-                      "id": 494,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "bool",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "516:5:6",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_bool",
-                        "typeString": "bool"
-                      },
-                      "value": "false"
-                    },
-                    "src": "509:12:6",
+                  "constant": false,
+                  "id": 489,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 494,
+                  "src": "575:4:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 488,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "575:4:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
                     }
                   },
-                  "id": 496,
-                  "nodeType": "ExpressionStatement",
-                  "src": "509:12:6"
-                },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "574:6:6"
+            },
+            "scope": 615,
+            "src": "535:68:6",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 506,
+              "nodeType": "Block",
+              "src": "638:61:6",
+              "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
@@ -786,11 +888,11 @@
                     "leftHandSide": {
                       "argumentTypes": null,
                       "id": 497,
-                      "name": "dColor",
+                      "name": "mColor",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 451,
-                      "src": "531:6:6",
+                      "referencedDeclaration": 445,
+                      "src": "648:6:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -800,7 +902,7 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "hexValue": "66616c7365",
+                      "hexValue": "74727565",
                       "id": 498,
                       "isConstant": false,
                       "isLValue": false,
@@ -808,15 +910,15 @@
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "538:5:6",
+                      "src": "655:4:6",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       },
-                      "value": "false"
+                      "value": "true"
                     },
-                    "src": "531:12:6",
+                    "src": "648:11:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -824,12 +926,12 @@
                   },
                   "id": 500,
                   "nodeType": "ExpressionStatement",
-                  "src": "531:12:6"
+                  "src": "648:11:6"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 503,
+                    "id": 504,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -837,11 +939,544 @@
                     "leftHandSide": {
                       "argumentTypes": null,
                       "id": 501,
+                      "name": "mtime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 456,
+                      "src": "669:5:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 502,
+                        "name": "block",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 620,
+                        "src": "677:5:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_block",
+                          "typeString": "block"
+                        }
+                      },
+                      "id": 503,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "timestamp",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "677:15:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "669:23:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 505,
+                  "nodeType": "ExpressionStatement",
+                  "src": "669:23:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 507,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setmColor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 495,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "629:2:6"
+            },
+            "returnParameters": {
+              "id": 496,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "638:0:6"
+            },
+            "scope": 615,
+            "src": "611:88:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 519,
+              "nodeType": "Block",
+              "src": "731:62:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 512,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 510,
+                      "name": "tColor",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 448,
+                      "src": "741:6:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 511,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "748:4:6",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "741:11:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 513,
+                  "nodeType": "ExpressionStatement",
+                  "src": "741:11:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 517,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 514,
+                      "name": "ttime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 460,
+                      "src": "762:5:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 515,
+                        "name": "block",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 620,
+                        "src": "770:5:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_block",
+                          "typeString": "block"
+                        }
+                      },
+                      "id": 516,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "timestamp",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "770:15:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "762:23:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 518,
+                  "nodeType": "ExpressionStatement",
+                  "src": "762:23:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 520,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "settColor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 508,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "722:2:6"
+            },
+            "returnParameters": {
+              "id": 509,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "731:0:6"
+            },
+            "scope": 615,
+            "src": "704:89:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 532,
+              "nodeType": "Block",
+              "src": "825:62:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 525,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 523,
+                      "name": "dColor",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 451,
+                      "src": "835:6:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 524,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "842:4:6",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "835:11:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 526,
+                  "nodeType": "ExpressionStatement",
+                  "src": "835:11:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 530,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 527,
+                      "name": "dtime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 458,
+                      "src": "856:5:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 528,
+                        "name": "block",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 620,
+                        "src": "864:5:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_block",
+                          "typeString": "block"
+                        }
+                      },
+                      "id": 529,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "timestamp",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "864:15:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "856:23:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 531,
+                  "nodeType": "ExpressionStatement",
+                  "src": "856:23:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 533,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setdColor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 521,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "816:2:6"
+            },
+            "returnParameters": {
+              "id": 522,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "825:0:6"
+            },
+            "scope": 615,
+            "src": "798:89:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 545,
+              "nodeType": "Block",
+              "src": "919:62:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 538,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 536,
                       "name": "rColor",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 454,
-                      "src": "553:6:6",
+                      "src": "929:6:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 537,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "936:4:6",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "929:11:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 539,
+                  "nodeType": "ExpressionStatement",
+                  "src": "929:11:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 543,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 540,
+                      "name": "rtime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 462,
+                      "src": "950:5:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 541,
+                        "name": "block",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 620,
+                        "src": "958:5:6",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_block",
+                          "typeString": "block"
+                        }
+                      },
+                      "id": 542,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "timestamp",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "958:15:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "950:23:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 544,
+                  "nodeType": "ExpressionStatement",
+                  "src": "950:23:6"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 546,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setrColor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 534,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "910:2:6"
+            },
+            "returnParameters": {
+              "id": 535,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "919:0:6"
+            },
+            "scope": 615,
+            "src": "892:89:6",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 581,
+              "nodeType": "Block",
+              "src": "1009:163:6",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 551,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 549,
+                      "name": "mColor",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 445,
+                      "src": "1019:6:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -852,14 +1487,14 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "66616c7365",
-                      "id": 502,
+                      "id": 550,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "bool",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "560:5:6",
+                      "src": "1026:5:6",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -867,94 +1502,451 @@
                       },
                       "value": "false"
                     },
-                    "src": "553:12:6",
+                    "src": "1019:12:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 504,
+                  "id": 552,
                   "nodeType": "ExpressionStatement",
-                  "src": "553:12:6"
+                  "src": "1019:12:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 555,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 553,
+                      "name": "tColor",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 448,
+                      "src": "1041:6:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "66616c7365",
+                      "id": 554,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1048:5:6",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "false"
+                    },
+                    "src": "1041:12:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 556,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1041:12:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 559,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 557,
+                      "name": "dColor",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 451,
+                      "src": "1063:6:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "66616c7365",
+                      "id": 558,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1070:5:6",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "false"
+                    },
+                    "src": "1063:12:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 560,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1063:12:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 563,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 561,
+                      "name": "rColor",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 454,
+                      "src": "1085:6:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "66616c7365",
+                      "id": 562,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1092:5:6",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "false"
+                    },
+                    "src": "1085:12:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 564,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1085:12:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 567,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 565,
+                      "name": "mtime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 456,
+                      "src": "1107:5:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 566,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1113:1:6",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1107:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 568,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1107:7:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 571,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 569,
+                      "name": "dtime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 458,
+                      "src": "1124:5:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 570,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1130:1:6",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1124:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 572,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1124:7:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 575,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 573,
+                      "name": "ttime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 460,
+                      "src": "1141:5:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 574,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1147:1:6",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1141:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 576,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1141:7:6"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 579,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 577,
+                      "name": "rtime",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 462,
+                      "src": "1158:5:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 578,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1164:1:6",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1158:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 580,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1158:7:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 506,
+            "id": 582,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "reset",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 487,
+              "id": 547,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "468:2:6"
+              "src": "1000:2:6"
             },
             "returnParameters": {
-              "id": 488,
+              "id": 548,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "477:0:6"
+              "src": "1009:0:6"
             },
-            "scope": 539,
-            "src": "454:118:6",
+            "scope": 615,
+            "src": "986:186:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 513,
+              "id": 589,
               "nodeType": "Block",
-              "src": "631:30:6",
+              "src": "1231:30:6",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 511,
+                    "id": 587,
                     "name": "mColor",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 445,
-                    "src": "648:6:6",
+                    "src": "1248:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 510,
-                  "id": 512,
+                  "functionReturnParameters": 586,
+                  "id": 588,
                   "nodeType": "Return",
-                  "src": "641:13:6"
+                  "src": "1241:13:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 514,
+            "id": 590,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getmColor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 507,
+              "id": 583,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "595:2:6"
+              "src": "1195:2:6"
             },
             "returnParameters": {
-              "id": 510,
+              "id": 586,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 509,
+                  "id": 585,
                   "name": "exists",
                   "nodeType": "VariableDeclaration",
-                  "scope": 514,
-                  "src": "619:11:6",
+                  "scope": 590,
+                  "src": "1219:11:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -962,10 +1954,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 508,
+                    "id": 584,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "619:4:6",
+                    "src": "1219:4:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -975,65 +1967,65 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "618:13:6"
+              "src": "1218:13:6"
             },
-            "scope": 539,
-            "src": "577:84:6",
+            "scope": 615,
+            "src": "1177:84:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 521,
+              "id": 597,
               "nodeType": "Block",
-              "src": "720:30:6",
+              "src": "1320:30:6",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 519,
+                    "id": 595,
                     "name": "tColor",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 448,
-                    "src": "737:6:6",
+                    "src": "1337:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 518,
-                  "id": 520,
+                  "functionReturnParameters": 594,
+                  "id": 596,
                   "nodeType": "Return",
-                  "src": "730:13:6"
+                  "src": "1330:13:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 522,
+            "id": 598,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "gettColor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 515,
+              "id": 591,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "684:2:6"
+              "src": "1284:2:6"
             },
             "returnParameters": {
-              "id": 518,
+              "id": 594,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 517,
+                  "id": 593,
                   "name": "exists",
                   "nodeType": "VariableDeclaration",
-                  "scope": 522,
-                  "src": "708:11:6",
+                  "scope": 598,
+                  "src": "1308:11:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1041,10 +2033,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 516,
+                    "id": 592,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "708:4:6",
+                    "src": "1308:4:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1054,65 +2046,65 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "707:13:6"
+              "src": "1307:13:6"
             },
-            "scope": 539,
-            "src": "666:84:6",
+            "scope": 615,
+            "src": "1266:84:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 529,
+              "id": 605,
               "nodeType": "Block",
-              "src": "809:30:6",
+              "src": "1409:30:6",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 527,
+                    "id": 603,
                     "name": "dColor",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 451,
-                    "src": "826:6:6",
+                    "src": "1426:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 526,
-                  "id": 528,
+                  "functionReturnParameters": 602,
+                  "id": 604,
                   "nodeType": "Return",
-                  "src": "819:13:6"
+                  "src": "1419:13:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 530,
+            "id": 606,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getdColor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 523,
+              "id": 599,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "773:2:6"
+              "src": "1373:2:6"
             },
             "returnParameters": {
-              "id": 526,
+              "id": 602,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 525,
+                  "id": 601,
                   "name": "exists",
                   "nodeType": "VariableDeclaration",
-                  "scope": 530,
-                  "src": "797:11:6",
+                  "scope": 606,
+                  "src": "1397:11:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1120,10 +2112,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 524,
+                    "id": 600,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "797:4:6",
+                    "src": "1397:4:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1133,65 +2125,65 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "796:13:6"
+              "src": "1396:13:6"
             },
-            "scope": 539,
-            "src": "755:84:6",
+            "scope": 615,
+            "src": "1355:84:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 537,
+              "id": 613,
               "nodeType": "Block",
-              "src": "898:30:6",
+              "src": "1498:30:6",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 535,
+                    "id": 611,
                     "name": "rColor",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 454,
-                    "src": "915:6:6",
+                    "src": "1515:6:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 534,
-                  "id": 536,
+                  "functionReturnParameters": 610,
+                  "id": 612,
                   "nodeType": "Return",
-                  "src": "908:13:6"
+                  "src": "1508:13:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 538,
+            "id": 614,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getrColor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 531,
+              "id": 607,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "862:2:6"
+              "src": "1462:2:6"
             },
             "returnParameters": {
-              "id": 534,
+              "id": 610,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 533,
+                  "id": 609,
                   "name": "exists",
                   "nodeType": "VariableDeclaration",
-                  "scope": 538,
-                  "src": "886:11:6",
+                  "scope": 614,
+                  "src": "1486:11:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1199,10 +2191,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 532,
+                    "id": 608,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "886:4:6",
+                    "src": "1486:4:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1212,27 +2204,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "885:13:6"
+              "src": "1485:13:6"
             },
-            "scope": 539,
-            "src": "844:84:6",
+            "scope": 615,
+            "src": "1444:84:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 540,
-        "src": "98:832:6"
+        "scope": 616,
+        "src": "98:1432:6"
       }
     ],
-    "src": "31:899:6"
+    "src": "31:1499:6"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "project:/contracts/tracking.sol",
       "exportedSymbols": {
         "tracking": [
-          539
+          615
         ]
       }
     },
@@ -1275,17 +2267,17 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            539
+            615
           ],
           "name": "tracking",
-          "scope": 540
+          "scope": 616
         },
         "children": [
           {
             "attributes": {
               "constant": false,
               "name": "mColor",
-              "scope": 539,
+              "scope": 615,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "bool",
@@ -1327,7 +2319,7 @@
             "attributes": {
               "constant": false,
               "name": "tColor",
-              "scope": 539,
+              "scope": 615,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "bool",
@@ -1369,7 +2361,7 @@
             "attributes": {
               "constant": false,
               "name": "dColor",
-              "scope": 539,
+              "scope": 615,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "bool",
@@ -1411,7 +2403,7 @@
             "attributes": {
               "constant": false,
               "name": "rColor",
-              "scope": 539,
+              "scope": 615,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "bool",
@@ -1451,107 +2443,107 @@
           },
           {
             "attributes": {
-              "documentation": null,
-              "implemented": true,
-              "isConstructor": false,
-              "kind": "function",
-              "modifiers": [
-                null
-              ],
-              "name": "setmColor",
-              "scope": 539,
-              "stateMutability": "nonpayable",
-              "superFunction": null,
+              "constant": false,
+              "name": "mtime",
+              "scope": 615,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
               "visibility": "public"
             },
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "name": "uint",
+                  "type": "uint256"
                 },
-                "children": [],
                 "id": 455,
-                "name": "ParameterList",
-                "src": "232:2:6"
-              },
+                "name": "ElementaryTypeName",
+                "src": "213:4:6"
+              }
+            ],
+            "id": 456,
+            "name": "VariableDeclaration",
+            "src": "213:17:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "dtime",
+              "scope": 615,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "name": "uint",
+                  "type": "uint256"
                 },
-                "children": [],
-                "id": 456,
-                "name": "ParameterList",
-                "src": "241:0:6"
-              },
+                "id": 457,
+                "name": "ElementaryTypeName",
+                "src": "236:4:6"
+              }
+            ],
+            "id": 458,
+            "name": "VariableDeclaration",
+            "src": "236:17:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "ttime",
+              "scope": 615,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
               {
-                "children": [
-                  {
-                    "children": [
-                      {
-                        "attributes": {
-                          "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "operator": "=",
-                          "type": "bool"
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 445,
-                              "type": "bool",
-                              "value": "mColor"
-                            },
-                            "id": 457,
-                            "name": "Identifier",
-                            "src": "251:6:6"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "hexvalue": "74727565",
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": true,
-                              "lValueRequested": false,
-                              "subdenomination": null,
-                              "token": "bool",
-                              "type": "bool",
-                              "value": "true"
-                            },
-                            "id": 458,
-                            "name": "Literal",
-                            "src": "258:4:6"
-                          }
-                        ],
-                        "id": 459,
-                        "name": "Assignment",
-                        "src": "251:11:6"
-                      }
-                    ],
-                    "id": 460,
-                    "name": "ExpressionStatement",
-                    "src": "251:11:6"
-                  }
-                ],
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 459,
+                "name": "ElementaryTypeName",
+                "src": "259:4:6"
+              }
+            ],
+            "id": 460,
+            "name": "VariableDeclaration",
+            "src": "259:17:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "rtime",
+              "scope": 615,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
                 "id": 461,
-                "name": "Block",
-                "src": "241:28:6"
+                "name": "ElementaryTypeName",
+                "src": "282:4:6"
               }
             ],
             "id": 462,
-            "name": "FunctionDefinition",
-            "src": "214:55:6"
+            "name": "VariableDeclaration",
+            "src": "282:17:6"
           },
           {
             "attributes": {
@@ -1562,9 +2554,9 @@
               "modifiers": [
                 null
               ],
-              "name": "settColor",
-              "scope": 539,
-              "stateMutability": "nonpayable",
+              "name": "getmTime",
+              "scope": 615,
+              "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
             },
@@ -1578,84 +2570,76 @@
                 "children": [],
                 "id": 463,
                 "name": "ParameterList",
-                "src": "292:2:6"
-              },
-              {
-                "attributes": {
-                  "parameters": [
-                    null
-                  ]
-                },
-                "children": [],
-                "id": 464,
-                "name": "ParameterList",
-                "src": "301:0:6"
+                "src": "323:2:6"
               },
               {
                 "children": [
                   {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 470,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 464,
+                        "name": "ElementaryTypeName",
+                        "src": "346:4:6"
+                      }
+                    ],
+                    "id": 465,
+                    "name": "VariableDeclaration",
+                    "src": "346:4:6"
+                  }
+                ],
+                "id": 466,
+                "name": "ParameterList",
+                "src": "345:6:6"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 466
+                    },
                     "children": [
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "operator": "=",
-                          "type": "bool"
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 456,
+                          "type": "uint256",
+                          "value": "mtime"
                         },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 448,
-                              "type": "bool",
-                              "value": "tColor"
-                            },
-                            "id": 465,
-                            "name": "Identifier",
-                            "src": "311:6:6"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "hexvalue": "74727565",
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": true,
-                              "lValueRequested": false,
-                              "subdenomination": null,
-                              "token": "bool",
-                              "type": "bool",
-                              "value": "true"
-                            },
-                            "id": 466,
-                            "name": "Literal",
-                            "src": "318:4:6"
-                          }
-                        ],
                         "id": 467,
-                        "name": "Assignment",
-                        "src": "311:11:6"
+                        "name": "Identifier",
+                        "src": "364:5:6"
                       }
                     ],
                     "id": 468,
-                    "name": "ExpressionStatement",
-                    "src": "311:11:6"
+                    "name": "Return",
+                    "src": "357:12:6"
                   }
                 ],
                 "id": 469,
                 "name": "Block",
-                "src": "301:28:6"
+                "src": "351:23:6"
               }
             ],
             "id": 470,
             "name": "FunctionDefinition",
-            "src": "274:55:6"
+            "src": "306:68:6"
           },
           {
             "attributes": {
@@ -1666,9 +2650,9 @@
               "modifiers": [
                 null
               ],
-              "name": "setdColor",
-              "scope": 539,
-              "stateMutability": "nonpayable",
+              "name": "gettTime",
+              "scope": 615,
+              "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
             },
@@ -1682,84 +2666,76 @@
                 "children": [],
                 "id": 471,
                 "name": "ParameterList",
-                "src": "352:2:6"
-              },
-              {
-                "attributes": {
-                  "parameters": [
-                    null
-                  ]
-                },
-                "children": [],
-                "id": 472,
-                "name": "ParameterList",
-                "src": "361:0:6"
+                "src": "404:2:6"
               },
               {
                 "children": [
                   {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 478,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 472,
+                        "name": "ElementaryTypeName",
+                        "src": "427:4:6"
+                      }
+                    ],
+                    "id": 473,
+                    "name": "VariableDeclaration",
+                    "src": "427:4:6"
+                  }
+                ],
+                "id": 474,
+                "name": "ParameterList",
+                "src": "426:6:6"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 474
+                    },
                     "children": [
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "operator": "=",
-                          "type": "bool"
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 460,
+                          "type": "uint256",
+                          "value": "ttime"
                         },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 451,
-                              "type": "bool",
-                              "value": "dColor"
-                            },
-                            "id": 473,
-                            "name": "Identifier",
-                            "src": "371:6:6"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "hexvalue": "74727565",
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": true,
-                              "lValueRequested": false,
-                              "subdenomination": null,
-                              "token": "bool",
-                              "type": "bool",
-                              "value": "true"
-                            },
-                            "id": 474,
-                            "name": "Literal",
-                            "src": "378:4:6"
-                          }
-                        ],
                         "id": 475,
-                        "name": "Assignment",
-                        "src": "371:11:6"
+                        "name": "Identifier",
+                        "src": "445:5:6"
                       }
                     ],
                     "id": 476,
-                    "name": "ExpressionStatement",
-                    "src": "371:11:6"
+                    "name": "Return",
+                    "src": "438:12:6"
                   }
                 ],
                 "id": 477,
                 "name": "Block",
-                "src": "361:28:6"
+                "src": "432:23:6"
               }
             ],
             "id": 478,
             "name": "FunctionDefinition",
-            "src": "334:55:6"
+            "src": "387:68:6"
           },
           {
             "attributes": {
@@ -1770,9 +2746,9 @@
               "modifiers": [
                 null
               ],
-              "name": "setrColor",
-              "scope": 539,
-              "stateMutability": "nonpayable",
+              "name": "getdTime",
+              "scope": 615,
+              "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
             },
@@ -1786,84 +2762,76 @@
                 "children": [],
                 "id": 479,
                 "name": "ParameterList",
-                "src": "412:2:6"
-              },
-              {
-                "attributes": {
-                  "parameters": [
-                    null
-                  ]
-                },
-                "children": [],
-                "id": 480,
-                "name": "ParameterList",
-                "src": "421:0:6"
+                "src": "478:2:6"
               },
               {
                 "children": [
                   {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 486,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 480,
+                        "name": "ElementaryTypeName",
+                        "src": "501:4:6"
+                      }
+                    ],
+                    "id": 481,
+                    "name": "VariableDeclaration",
+                    "src": "501:4:6"
+                  }
+                ],
+                "id": 482,
+                "name": "ParameterList",
+                "src": "500:6:6"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 482
+                    },
                     "children": [
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "operator": "=",
-                          "type": "bool"
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 458,
+                          "type": "uint256",
+                          "value": "dtime"
                         },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 454,
-                              "type": "bool",
-                              "value": "rColor"
-                            },
-                            "id": 481,
-                            "name": "Identifier",
-                            "src": "431:6:6"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "hexvalue": "74727565",
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": true,
-                              "lValueRequested": false,
-                              "subdenomination": null,
-                              "token": "bool",
-                              "type": "bool",
-                              "value": "true"
-                            },
-                            "id": 482,
-                            "name": "Literal",
-                            "src": "438:4:6"
-                          }
-                        ],
                         "id": 483,
-                        "name": "Assignment",
-                        "src": "431:11:6"
+                        "name": "Identifier",
+                        "src": "519:5:6"
                       }
                     ],
                     "id": 484,
-                    "name": "ExpressionStatement",
-                    "src": "431:11:6"
+                    "name": "Return",
+                    "src": "512:12:6"
                   }
                 ],
                 "id": 485,
                 "name": "Block",
-                "src": "421:28:6"
+                "src": "506:23:6"
               }
             ],
             "id": 486,
             "name": "FunctionDefinition",
-            "src": "394:55:6"
+            "src": "461:68:6"
           },
           {
             "attributes": {
@@ -1874,9 +2842,9 @@
               "modifiers": [
                 null
               ],
-              "name": "reset",
-              "scope": 539,
-              "stateMutability": "nonpayable",
+              "name": "getrTime",
+              "scope": 615,
+              "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
             },
@@ -1890,7 +2858,103 @@
                 "children": [],
                 "id": 487,
                 "name": "ParameterList",
-                "src": "468:2:6"
+                "src": "552:2:6"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 494,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 488,
+                        "name": "ElementaryTypeName",
+                        "src": "575:4:6"
+                      }
+                    ],
+                    "id": 489,
+                    "name": "VariableDeclaration",
+                    "src": "575:4:6"
+                  }
+                ],
+                "id": 490,
+                "name": "ParameterList",
+                "src": "574:6:6"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 490
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 462,
+                          "type": "uint256",
+                          "value": "rtime"
+                        },
+                        "id": 491,
+                        "name": "Identifier",
+                        "src": "593:5:6"
+                      }
+                    ],
+                    "id": 492,
+                    "name": "Return",
+                    "src": "586:12:6"
+                  }
+                ],
+                "id": 493,
+                "name": "Block",
+                "src": "580:23:6"
+              }
+            ],
+            "id": 494,
+            "name": "FunctionDefinition",
+            "src": "535:68:6"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setmColor",
+              "scope": 615,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 495,
+                "name": "ParameterList",
+                "src": "629:2:6"
               },
               {
                 "attributes": {
@@ -1899,9 +2963,9 @@
                   ]
                 },
                 "children": [],
-                "id": 488,
+                "id": 496,
                 "name": "ParameterList",
-                "src": "477:0:6"
+                "src": "638:0:6"
               },
               {
                 "children": [
@@ -1928,9 +2992,697 @@
                               "type": "bool",
                               "value": "mColor"
                             },
-                            "id": 489,
+                            "id": 497,
                             "name": "Identifier",
-                            "src": "487:6:6"
+                            "src": "648:6:6"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "74727565",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "true"
+                            },
+                            "id": 498,
+                            "name": "Literal",
+                            "src": "655:4:6"
+                          }
+                        ],
+                        "id": 499,
+                        "name": "Assignment",
+                        "src": "648:11:6"
+                      }
+                    ],
+                    "id": 500,
+                    "name": "ExpressionStatement",
+                    "src": "648:11:6"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 456,
+                              "type": "uint256",
+                              "value": "mtime"
+                            },
+                            "id": 501,
+                            "name": "Identifier",
+                            "src": "669:5:6"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "timestamp",
+                              "referencedDeclaration": null,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 620,
+                                  "type": "block",
+                                  "value": "block"
+                                },
+                                "id": 502,
+                                "name": "Identifier",
+                                "src": "677:5:6"
+                              }
+                            ],
+                            "id": 503,
+                            "name": "MemberAccess",
+                            "src": "677:15:6"
+                          }
+                        ],
+                        "id": 504,
+                        "name": "Assignment",
+                        "src": "669:23:6"
+                      }
+                    ],
+                    "id": 505,
+                    "name": "ExpressionStatement",
+                    "src": "669:23:6"
+                  }
+                ],
+                "id": 506,
+                "name": "Block",
+                "src": "638:61:6"
+              }
+            ],
+            "id": 507,
+            "name": "FunctionDefinition",
+            "src": "611:88:6"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "settColor",
+              "scope": 615,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 508,
+                "name": "ParameterList",
+                "src": "722:2:6"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 509,
+                "name": "ParameterList",
+                "src": "731:0:6"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 448,
+                              "type": "bool",
+                              "value": "tColor"
+                            },
+                            "id": 510,
+                            "name": "Identifier",
+                            "src": "741:6:6"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "74727565",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "true"
+                            },
+                            "id": 511,
+                            "name": "Literal",
+                            "src": "748:4:6"
+                          }
+                        ],
+                        "id": 512,
+                        "name": "Assignment",
+                        "src": "741:11:6"
+                      }
+                    ],
+                    "id": 513,
+                    "name": "ExpressionStatement",
+                    "src": "741:11:6"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 460,
+                              "type": "uint256",
+                              "value": "ttime"
+                            },
+                            "id": 514,
+                            "name": "Identifier",
+                            "src": "762:5:6"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "timestamp",
+                              "referencedDeclaration": null,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 620,
+                                  "type": "block",
+                                  "value": "block"
+                                },
+                                "id": 515,
+                                "name": "Identifier",
+                                "src": "770:5:6"
+                              }
+                            ],
+                            "id": 516,
+                            "name": "MemberAccess",
+                            "src": "770:15:6"
+                          }
+                        ],
+                        "id": 517,
+                        "name": "Assignment",
+                        "src": "762:23:6"
+                      }
+                    ],
+                    "id": 518,
+                    "name": "ExpressionStatement",
+                    "src": "762:23:6"
+                  }
+                ],
+                "id": 519,
+                "name": "Block",
+                "src": "731:62:6"
+              }
+            ],
+            "id": 520,
+            "name": "FunctionDefinition",
+            "src": "704:89:6"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setdColor",
+              "scope": 615,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 521,
+                "name": "ParameterList",
+                "src": "816:2:6"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 522,
+                "name": "ParameterList",
+                "src": "825:0:6"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 451,
+                              "type": "bool",
+                              "value": "dColor"
+                            },
+                            "id": 523,
+                            "name": "Identifier",
+                            "src": "835:6:6"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "74727565",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "true"
+                            },
+                            "id": 524,
+                            "name": "Literal",
+                            "src": "842:4:6"
+                          }
+                        ],
+                        "id": 525,
+                        "name": "Assignment",
+                        "src": "835:11:6"
+                      }
+                    ],
+                    "id": 526,
+                    "name": "ExpressionStatement",
+                    "src": "835:11:6"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 458,
+                              "type": "uint256",
+                              "value": "dtime"
+                            },
+                            "id": 527,
+                            "name": "Identifier",
+                            "src": "856:5:6"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "timestamp",
+                              "referencedDeclaration": null,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 620,
+                                  "type": "block",
+                                  "value": "block"
+                                },
+                                "id": 528,
+                                "name": "Identifier",
+                                "src": "864:5:6"
+                              }
+                            ],
+                            "id": 529,
+                            "name": "MemberAccess",
+                            "src": "864:15:6"
+                          }
+                        ],
+                        "id": 530,
+                        "name": "Assignment",
+                        "src": "856:23:6"
+                      }
+                    ],
+                    "id": 531,
+                    "name": "ExpressionStatement",
+                    "src": "856:23:6"
+                  }
+                ],
+                "id": 532,
+                "name": "Block",
+                "src": "825:62:6"
+              }
+            ],
+            "id": 533,
+            "name": "FunctionDefinition",
+            "src": "798:89:6"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setrColor",
+              "scope": 615,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 534,
+                "name": "ParameterList",
+                "src": "910:2:6"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 535,
+                "name": "ParameterList",
+                "src": "919:0:6"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 454,
+                              "type": "bool",
+                              "value": "rColor"
+                            },
+                            "id": 536,
+                            "name": "Identifier",
+                            "src": "929:6:6"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "74727565",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "true"
+                            },
+                            "id": 537,
+                            "name": "Literal",
+                            "src": "936:4:6"
+                          }
+                        ],
+                        "id": 538,
+                        "name": "Assignment",
+                        "src": "929:11:6"
+                      }
+                    ],
+                    "id": 539,
+                    "name": "ExpressionStatement",
+                    "src": "929:11:6"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 462,
+                              "type": "uint256",
+                              "value": "rtime"
+                            },
+                            "id": 540,
+                            "name": "Identifier",
+                            "src": "950:5:6"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "timestamp",
+                              "referencedDeclaration": null,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 620,
+                                  "type": "block",
+                                  "value": "block"
+                                },
+                                "id": 541,
+                                "name": "Identifier",
+                                "src": "958:5:6"
+                              }
+                            ],
+                            "id": 542,
+                            "name": "MemberAccess",
+                            "src": "958:15:6"
+                          }
+                        ],
+                        "id": 543,
+                        "name": "Assignment",
+                        "src": "950:23:6"
+                      }
+                    ],
+                    "id": 544,
+                    "name": "ExpressionStatement",
+                    "src": "950:23:6"
+                  }
+                ],
+                "id": 545,
+                "name": "Block",
+                "src": "919:62:6"
+              }
+            ],
+            "id": 546,
+            "name": "FunctionDefinition",
+            "src": "892:89:6"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "reset",
+              "scope": 615,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 547,
+                "name": "ParameterList",
+                "src": "1000:2:6"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 548,
+                "name": "ParameterList",
+                "src": "1009:0:6"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 445,
+                              "type": "bool",
+                              "value": "mColor"
+                            },
+                            "id": 549,
+                            "name": "Identifier",
+                            "src": "1019:6:6"
                           },
                           {
                             "attributes": {
@@ -1945,19 +3697,19 @@
                               "type": "bool",
                               "value": "false"
                             },
-                            "id": 490,
+                            "id": 550,
                             "name": "Literal",
-                            "src": "494:5:6"
+                            "src": "1026:5:6"
                           }
                         ],
-                        "id": 491,
+                        "id": 551,
                         "name": "Assignment",
-                        "src": "487:12:6"
+                        "src": "1019:12:6"
                       }
                     ],
-                    "id": 492,
+                    "id": 552,
                     "name": "ExpressionStatement",
-                    "src": "487:12:6"
+                    "src": "1019:12:6"
                   },
                   {
                     "children": [
@@ -1982,9 +3734,9 @@
                               "type": "bool",
                               "value": "tColor"
                             },
-                            "id": 493,
+                            "id": 553,
                             "name": "Identifier",
-                            "src": "509:6:6"
+                            "src": "1041:6:6"
                           },
                           {
                             "attributes": {
@@ -1999,19 +3751,19 @@
                               "type": "bool",
                               "value": "false"
                             },
-                            "id": 494,
+                            "id": 554,
                             "name": "Literal",
-                            "src": "516:5:6"
+                            "src": "1048:5:6"
                           }
                         ],
-                        "id": 495,
+                        "id": 555,
                         "name": "Assignment",
-                        "src": "509:12:6"
+                        "src": "1041:12:6"
                       }
                     ],
-                    "id": 496,
+                    "id": 556,
                     "name": "ExpressionStatement",
-                    "src": "509:12:6"
+                    "src": "1041:12:6"
                   },
                   {
                     "children": [
@@ -2036,9 +3788,9 @@
                               "type": "bool",
                               "value": "dColor"
                             },
-                            "id": 497,
+                            "id": 557,
                             "name": "Identifier",
-                            "src": "531:6:6"
+                            "src": "1063:6:6"
                           },
                           {
                             "attributes": {
@@ -2053,19 +3805,19 @@
                               "type": "bool",
                               "value": "false"
                             },
-                            "id": 498,
+                            "id": 558,
                             "name": "Literal",
-                            "src": "538:5:6"
+                            "src": "1070:5:6"
                           }
                         ],
-                        "id": 499,
+                        "id": 559,
                         "name": "Assignment",
-                        "src": "531:12:6"
+                        "src": "1063:12:6"
                       }
                     ],
-                    "id": 500,
+                    "id": 560,
                     "name": "ExpressionStatement",
-                    "src": "531:12:6"
+                    "src": "1063:12:6"
                   },
                   {
                     "children": [
@@ -2090,9 +3842,9 @@
                               "type": "bool",
                               "value": "rColor"
                             },
-                            "id": 501,
+                            "id": 561,
                             "name": "Identifier",
-                            "src": "553:6:6"
+                            "src": "1085:6:6"
                           },
                           {
                             "attributes": {
@@ -2107,29 +3859,245 @@
                               "type": "bool",
                               "value": "false"
                             },
-                            "id": 502,
+                            "id": 562,
                             "name": "Literal",
-                            "src": "560:5:6"
+                            "src": "1092:5:6"
                           }
                         ],
-                        "id": 503,
+                        "id": 563,
                         "name": "Assignment",
-                        "src": "553:12:6"
+                        "src": "1085:12:6"
                       }
                     ],
-                    "id": 504,
+                    "id": 564,
                     "name": "ExpressionStatement",
-                    "src": "553:12:6"
+                    "src": "1085:12:6"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 456,
+                              "type": "uint256",
+                              "value": "mtime"
+                            },
+                            "id": 565,
+                            "name": "Identifier",
+                            "src": "1107:5:6"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "30",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 566,
+                            "name": "Literal",
+                            "src": "1113:1:6"
+                          }
+                        ],
+                        "id": 567,
+                        "name": "Assignment",
+                        "src": "1107:7:6"
+                      }
+                    ],
+                    "id": 568,
+                    "name": "ExpressionStatement",
+                    "src": "1107:7:6"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 458,
+                              "type": "uint256",
+                              "value": "dtime"
+                            },
+                            "id": 569,
+                            "name": "Identifier",
+                            "src": "1124:5:6"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "30",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 570,
+                            "name": "Literal",
+                            "src": "1130:1:6"
+                          }
+                        ],
+                        "id": 571,
+                        "name": "Assignment",
+                        "src": "1124:7:6"
+                      }
+                    ],
+                    "id": 572,
+                    "name": "ExpressionStatement",
+                    "src": "1124:7:6"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 460,
+                              "type": "uint256",
+                              "value": "ttime"
+                            },
+                            "id": 573,
+                            "name": "Identifier",
+                            "src": "1141:5:6"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "30",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 574,
+                            "name": "Literal",
+                            "src": "1147:1:6"
+                          }
+                        ],
+                        "id": 575,
+                        "name": "Assignment",
+                        "src": "1141:7:6"
+                      }
+                    ],
+                    "id": 576,
+                    "name": "ExpressionStatement",
+                    "src": "1141:7:6"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 462,
+                              "type": "uint256",
+                              "value": "rtime"
+                            },
+                            "id": 577,
+                            "name": "Identifier",
+                            "src": "1158:5:6"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "30",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 578,
+                            "name": "Literal",
+                            "src": "1164:1:6"
+                          }
+                        ],
+                        "id": 579,
+                        "name": "Assignment",
+                        "src": "1158:7:6"
+                      }
+                    ],
+                    "id": 580,
+                    "name": "ExpressionStatement",
+                    "src": "1158:7:6"
                   }
                 ],
-                "id": 505,
+                "id": 581,
                 "name": "Block",
-                "src": "477:95:6"
+                "src": "1009:163:6"
               }
             ],
-            "id": 506,
+            "id": 582,
             "name": "FunctionDefinition",
-            "src": "454:118:6"
+            "src": "986:186:6"
           },
           {
             "attributes": {
@@ -2141,7 +4109,7 @@
                 null
               ],
               "name": "getmColor",
-              "scope": 539,
+              "scope": 615,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -2154,9 +4122,9 @@
                   ]
                 },
                 "children": [],
-                "id": 507,
+                "id": 583,
                 "name": "ParameterList",
-                "src": "595:2:6"
+                "src": "1195:2:6"
               },
               {
                 "children": [
@@ -2164,7 +4132,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "exists",
-                      "scope": 514,
+                      "scope": 590,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bool",
@@ -2177,25 +4145,25 @@
                           "name": "bool",
                           "type": "bool"
                         },
-                        "id": 508,
+                        "id": 584,
                         "name": "ElementaryTypeName",
-                        "src": "619:4:6"
+                        "src": "1219:4:6"
                       }
                     ],
-                    "id": 509,
+                    "id": 585,
                     "name": "VariableDeclaration",
-                    "src": "619:11:6"
+                    "src": "1219:11:6"
                   }
                 ],
-                "id": 510,
+                "id": 586,
                 "name": "ParameterList",
-                "src": "618:13:6"
+                "src": "1218:13:6"
               },
               {
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 510
+                      "functionReturnParameters": 586
                     },
                     "children": [
                       {
@@ -2208,24 +4176,24 @@
                           "type": "bool",
                           "value": "mColor"
                         },
-                        "id": 511,
+                        "id": 587,
                         "name": "Identifier",
-                        "src": "648:6:6"
+                        "src": "1248:6:6"
                       }
                     ],
-                    "id": 512,
+                    "id": 588,
                     "name": "Return",
-                    "src": "641:13:6"
+                    "src": "1241:13:6"
                   }
                 ],
-                "id": 513,
+                "id": 589,
                 "name": "Block",
-                "src": "631:30:6"
+                "src": "1231:30:6"
               }
             ],
-            "id": 514,
+            "id": 590,
             "name": "FunctionDefinition",
-            "src": "577:84:6"
+            "src": "1177:84:6"
           },
           {
             "attributes": {
@@ -2237,7 +4205,7 @@
                 null
               ],
               "name": "gettColor",
-              "scope": 539,
+              "scope": 615,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -2250,9 +4218,9 @@
                   ]
                 },
                 "children": [],
-                "id": 515,
+                "id": 591,
                 "name": "ParameterList",
-                "src": "684:2:6"
+                "src": "1284:2:6"
               },
               {
                 "children": [
@@ -2260,7 +4228,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "exists",
-                      "scope": 522,
+                      "scope": 598,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bool",
@@ -2273,25 +4241,25 @@
                           "name": "bool",
                           "type": "bool"
                         },
-                        "id": 516,
+                        "id": 592,
                         "name": "ElementaryTypeName",
-                        "src": "708:4:6"
+                        "src": "1308:4:6"
                       }
                     ],
-                    "id": 517,
+                    "id": 593,
                     "name": "VariableDeclaration",
-                    "src": "708:11:6"
+                    "src": "1308:11:6"
                   }
                 ],
-                "id": 518,
+                "id": 594,
                 "name": "ParameterList",
-                "src": "707:13:6"
+                "src": "1307:13:6"
               },
               {
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 518
+                      "functionReturnParameters": 594
                     },
                     "children": [
                       {
@@ -2304,24 +4272,24 @@
                           "type": "bool",
                           "value": "tColor"
                         },
-                        "id": 519,
+                        "id": 595,
                         "name": "Identifier",
-                        "src": "737:6:6"
+                        "src": "1337:6:6"
                       }
                     ],
-                    "id": 520,
+                    "id": 596,
                     "name": "Return",
-                    "src": "730:13:6"
+                    "src": "1330:13:6"
                   }
                 ],
-                "id": 521,
+                "id": 597,
                 "name": "Block",
-                "src": "720:30:6"
+                "src": "1320:30:6"
               }
             ],
-            "id": 522,
+            "id": 598,
             "name": "FunctionDefinition",
-            "src": "666:84:6"
+            "src": "1266:84:6"
           },
           {
             "attributes": {
@@ -2333,7 +4301,7 @@
                 null
               ],
               "name": "getdColor",
-              "scope": 539,
+              "scope": 615,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -2346,9 +4314,9 @@
                   ]
                 },
                 "children": [],
-                "id": 523,
+                "id": 599,
                 "name": "ParameterList",
-                "src": "773:2:6"
+                "src": "1373:2:6"
               },
               {
                 "children": [
@@ -2356,7 +4324,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "exists",
-                      "scope": 530,
+                      "scope": 606,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bool",
@@ -2369,25 +4337,25 @@
                           "name": "bool",
                           "type": "bool"
                         },
-                        "id": 524,
+                        "id": 600,
                         "name": "ElementaryTypeName",
-                        "src": "797:4:6"
+                        "src": "1397:4:6"
                       }
                     ],
-                    "id": 525,
+                    "id": 601,
                     "name": "VariableDeclaration",
-                    "src": "797:11:6"
+                    "src": "1397:11:6"
                   }
                 ],
-                "id": 526,
+                "id": 602,
                 "name": "ParameterList",
-                "src": "796:13:6"
+                "src": "1396:13:6"
               },
               {
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 526
+                      "functionReturnParameters": 602
                     },
                     "children": [
                       {
@@ -2400,24 +4368,24 @@
                           "type": "bool",
                           "value": "dColor"
                         },
-                        "id": 527,
+                        "id": 603,
                         "name": "Identifier",
-                        "src": "826:6:6"
+                        "src": "1426:6:6"
                       }
                     ],
-                    "id": 528,
+                    "id": 604,
                     "name": "Return",
-                    "src": "819:13:6"
+                    "src": "1419:13:6"
                   }
                 ],
-                "id": 529,
+                "id": 605,
                 "name": "Block",
-                "src": "809:30:6"
+                "src": "1409:30:6"
               }
             ],
-            "id": 530,
+            "id": 606,
             "name": "FunctionDefinition",
-            "src": "755:84:6"
+            "src": "1355:84:6"
           },
           {
             "attributes": {
@@ -2429,7 +4397,7 @@
                 null
               ],
               "name": "getrColor",
-              "scope": 539,
+              "scope": 615,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -2442,9 +4410,9 @@
                   ]
                 },
                 "children": [],
-                "id": 531,
+                "id": 607,
                 "name": "ParameterList",
-                "src": "862:2:6"
+                "src": "1462:2:6"
               },
               {
                 "children": [
@@ -2452,7 +4420,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "exists",
-                      "scope": 538,
+                      "scope": 614,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bool",
@@ -2465,25 +4433,25 @@
                           "name": "bool",
                           "type": "bool"
                         },
-                        "id": 532,
+                        "id": 608,
                         "name": "ElementaryTypeName",
-                        "src": "886:4:6"
+                        "src": "1486:4:6"
                       }
                     ],
-                    "id": 533,
+                    "id": 609,
                     "name": "VariableDeclaration",
-                    "src": "886:11:6"
+                    "src": "1486:11:6"
                   }
                 ],
-                "id": 534,
+                "id": 610,
                 "name": "ParameterList",
-                "src": "885:13:6"
+                "src": "1485:13:6"
               },
               {
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 534
+                      "functionReturnParameters": 610
                     },
                     "children": [
                       {
@@ -2496,34 +4464,34 @@
                           "type": "bool",
                           "value": "rColor"
                         },
-                        "id": 535,
+                        "id": 611,
                         "name": "Identifier",
-                        "src": "915:6:6"
+                        "src": "1515:6:6"
                       }
                     ],
-                    "id": 536,
+                    "id": 612,
                     "name": "Return",
-                    "src": "908:13:6"
+                    "src": "1508:13:6"
                   }
                 ],
-                "id": 537,
+                "id": 613,
                 "name": "Block",
-                "src": "898:30:6"
+                "src": "1498:30:6"
               }
             ],
-            "id": 538,
+            "id": 614,
             "name": "FunctionDefinition",
-            "src": "844:84:6"
+            "src": "1444:84:6"
           }
         ],
-        "id": 539,
+        "id": 615,
         "name": "ContractDefinition",
-        "src": "98:832:6"
+        "src": "98:1432:6"
       }
     ],
-    "id": 540,
+    "id": 616,
     "name": "SourceUnit",
-    "src": "31:899:6"
+    "src": "31:1499:6"
   },
   "compiler": {
     "name": "solc",
@@ -2533,12 +4501,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xCa44977351a134932C7D279F488eF5194Bfcd6f4",
-      "transactionHash": "0x431d4af01991496f50d4400c094ebfd7fdcc9d17e05266ef6049482bee97e195"
+      "address": "0xF078D693103918e41205Fa955D33f4CeA643E1ab",
+      "transactionHash": "0x1d60c16a6111f7cfcbc5d562339e1bc097a5296a154404a8e4fb969529a3c9a2"
     }
   },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2023-02-01T18:03:32.431Z",
+  "updatedAt": "2023-02-12T15:24:28.970Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

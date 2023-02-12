@@ -58,6 +58,7 @@ export default function SignIn() {
 
 		if (DATA.user) {
 			localStorage.setItem('token', DATA.user);
+			localStorage.setItem('id', DATA.id);
 			alert('Login successful');
 			navigate('/udashboard');
 		} else {

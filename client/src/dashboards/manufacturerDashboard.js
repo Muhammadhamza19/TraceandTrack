@@ -81,7 +81,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
 import tracking from "../contracts/tracking.json";
-
+import moment from "moment"
 
 export default function DashboardApp() {
   const [account,setAccount]=useState('');
@@ -92,6 +92,8 @@ export default function DashboardApp() {
   const [tranIdList,setTranIdList] = useState([]);
   const [tableData, settableData] = useState([]);
   const [trackContract, settrackContract]=useState(null);
+  const [autocheck, setAutocheck]=useState(false);
+  const [time, setTime]=useState("");
   
   const loadContract= async()=>{
     const web3 = await getWeb3();
@@ -130,11 +132,21 @@ export default function DashboardApp() {
     const data = new FormData(event.currentTarget);
     console.log(data.get('quantity') +" "+ selectedTran);
     await contract.methods.getPackage(data.get('quantity').toString())
-    .send({ from: account }).then((r)=>{}).catch(err=>console.log(err))
-
+    .send({ from: account }).then( (r)=>{
+      // const web3 = await getWeb3();
+      // let block = await web3.eth.getBlock(r.blockNumber).timestamp
+      // var date1= new Date(block*1000);
+      // console.log(date1.toUTCString())
+    }).catch(err=>console.log(err))
+    setAutocheck("mc")
     await trackContract.methods.setmColor().send({ from: account }).then((r)=>{}).catch(err=>console.log(err))
 
     const mc = await trackContract.methods.getmColor().call();
+    const mdate= await trackContract.methods.getmTime().call();
+    const date = new Date(mdate * 1000);
+    const formattedDate = date.toLocaleString();
+    console.log(formattedDate)
+    setTime(formattedDate)
     console.log(mc)
 
   };
@@ -171,15 +183,15 @@ export default function DashboardApp() {
     
 },[]);
 
-const confirmSelection = async(event)=>{
-  for(var k=0;k<tranList.length;k++){
-    if(tranList[k]===selectedTran){
-      setTranId(tranIdList[k])
-      break
-    }
-  }  
-  console.log(selectedTranId)
-}
+// const confirmSelection = async(event)=>{
+//   for(var k=0;k<tranList.length;k++){
+//     if(tranList[k]===selectedTran){
+//       setTranId(tranIdList[k])
+//       break
+//     }
+//   }  
+//   console.log(selectedTranId)
+// }
 
 
 async function  seeDetails ()
@@ -227,13 +239,13 @@ const chooseSelect = async() =>{
 
 
           <Grid item xs={12} md={6} lg={4}>
-            <AppOrderTimeline />
+            <AppOrderTimeline  autocheck={autocheck} times={time}/>
           </Grid>
 
           <Grid item xs={9} md={6} lg={8}>
           <div>
             <TableContainer component={Paper}>
-              <Table sx={{ minWidth: 500 }} aria-label="simple table">
+              <Table sx={{ minWidth: 300 }} aria-label="simple table">
                 <TableHead>
                   <TableRow>
                     <TableCell align="center">Region</TableCell>
@@ -263,14 +275,14 @@ const chooseSelect = async() =>{
 
         <Button onClick={seeDetails}>Click</Button>
         <Button onClick={chooseSelect}>Choose</Button>
-        <Box sx={{ minWidth: 120 }}>
-        <FormControl fullWidth>
+        <Box sx={{ minWidth: 50 }}>
+        <FormControl style={{ width: '50%' }}>
           <InputLabel id="demo-simple-select-label">Transporter</InputLabel>
           <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
+            labelId="transporter"
+            id="transporter"
             value={selectedTran}
-            label="Age"
+            label="Transporter"
             onChange={handleChange}
           >
             {tranList.map((name)=>(                        
@@ -283,16 +295,17 @@ const chooseSelect = async() =>{
           <TextField
               margin="normal"
               required
-              fullWidth
+              style={{ width: '50%' }}
               name="quantity"
               label="Quantity"
               id="quantity"
               autoComplete="quantity"
             />
-            <Button onClick={confirmSelection}>Confirm</Button>
+            {/* <Button onClick={confirmSelection}>Confirm</Button> */}
             <Button
               type="submit"
-              fullWidth
+              
+              style={{ width: '100px', margin:'25px'}}
               variant="contained"
               sx={{ mt: 3, mb: 3 }}
             >
